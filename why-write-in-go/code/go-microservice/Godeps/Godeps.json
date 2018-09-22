@@ -1,0 +1,9 @@
+{
+	"ImportPath": "github.build.ge.com/212472270/talks/why-write-in-go/code/go-microservice",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"."
+	],
+	"Deps": []
+}

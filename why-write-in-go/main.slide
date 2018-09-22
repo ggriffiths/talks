@@ -1,0 +1,171 @@
+Why Write in Go?
+Context around the Go Programming Language
+
+Grant Griffiths
+Software Engineer - Predix PCE PaaS
+Digital Technology Leadership Program
+grant.griffiths@ge.com
+
+* What is Go?
+- General-purpose language 
+- Strongly typed
+- Garbage collected
+- Explicit support for concurrency
+- Compiles to executable binary
+- Open source, by Google
+.image img/speedygopher.png 200 _
+
+* Why was the language created
+
+Motivation:
+- Software Infrastructure scale issues @ Google
+- Frustrating large C/C++ codebases
+- Long build times
+- Bad tooling
+
+Goals:
+- Support for networked/multicore computing
+- Simple and elegant, yet high performance 
+- Quick compilation time for large codebases
+.image img/speedygopher.png 200 _
+
+* Historical Context
+- Authors: Robert Griesemer, Rob Pike, and Ken Thompson
+- Whiteboarding started September 2007 while waiting for large C++ builds to run
+- Russ Cox joined in late 2008. He helped move the language and libraries from prototype to reality.
+- Go 1.0 was released in March 2012
+- Became open sourced on November 10, 2009
+.image img/speedygopher.png 200 _
+
+* Ok, but why should I write in Go?
+
+* 
+.iframe http://www.youtube.com/embed/LJvEIjRBSDA 480 853
+
+* But really, why write in Go?
+
+- Great for building microservices
+- Small memory/disk overhead
+- Great tooling for development and testing
+- Simple, easy to learn - 25 keywords
+- Native support for concurrency
+- Many major projects written in Go
+- Amazing community and Mascot
+.image img/speedygopher.png 200 _
+
+
+* Building Microservices
+.code code/go-microservice/main.go
+
+* Small memory/disk overhead
+- Go vs. Java memory/disk usage
+- Deployed two hello world microservices in Go and Java both exposing a REST API
+.image img/goms.png _ 600
+.image img/javams.png _ 600
+.image img/gominer.jpeg
+
+* Tooling
+Built in tools such as...
+- [[https://golang.org/cmd/gofmt/][go fmt]], Standardized auto formating
+- [[https://github.com/golang/lint][golint]], Linter 
+- [[https://godoc.org/golang.org/x/tools/cmd/goimports][goimports]], Auto imports
+- [[https://golang.org/pkg/testing][go test]], Built in testing
+- [[https://golang.org/pkg/net/http/pprof][pprof]], Profiling and benchmarking
+- many community ones
+.image img/gominer.jpeg
+
+
+* Easy to learn
+Designed to be simple and readable
+
+Only 25 keywords
+
+    break        default      func         interface    select
+    case         defer        go           map          struct
+    chan         else         goto         package      switch
+    const        fallthrough  if           range        type
+    continue     for          import       return       var
+
+and 5 secret ones...
+
+    notwithstanding 
+    thetruthofthematter
+    despiteallobjections 
+    whereas
+    insofaras
+
+* Concurrency - Goroutines
+.play code/concurrency/main.go
+
+* Concurrency - Channels 
+.play code/channels/main.go
+
+* Concurrency - Much mroe 
+- Wait groups
+- Mutex
+- Buffered channels
+- etc
+.image img/gominer.jpeg
+
+* Major projects in Go
+- Kubernetes 
+- Docker
+- Etcd
+- Terraform/Vault/Consul/etc
+- CoreOS
+- Prometheus
+- InfluxDB
+- Cloud Foundry
+- Go
+- many more
+
+* The Go Gopher
+By Renée French
+.image img/gomascot.png 480 _
+
+* The community
+- Very unique and friendly community
+- More slides borrowed from State of Go - May 2017 by Francesc
+.image img/speedygopher.png 200 _
+
+* Women Who Go
+
+.image img/wwg.png _ 800
+.caption 16 chapters already! [[http://www.womenwhogo.org]]
+
+* Go meetups
+
+.image img/meetups.png _ 900
+.caption Gophers all around the world! [[http://go-meetups.appspot.com]]
+
+* Conferences in 2017:
+
+- [[http://www.gophercon.in/][GopherCon India]], Feb 25-25th
+- [[https://gophercon.com/][Gophercon Denver]], Jul 12-15th
+- [[http://golanguk.com/][Golang UK]], August 16th-18th
+- [[http://2017.dotgo.eu/][dotGo]], Nov 6th
+- [[https://golanguk.com][Golang UK]], Aug 16th
+- [[https://2017.gopherconbr.org/en][GopherCon Brasil]], Nov 17th
+.image img/speedygopher.png 200 _
+
+
+* Where to get started
+
+Self learning
+- [[https://gobyexample.com][Go by Example]]
+- [[https://golang.org/doc/effective_go.html][Effective Go]]
+
+Team Training
+- [[https://www.ardanlabs.com/ultimate-go][Ultimate Go]]
+- [[https://gopheracademy.com][Gopher Academy]]
+
+Misc
+- [[https://www.youtube.com/playlist?list=PL64wiCrrxh4Jisi7OcCJIUpguV_f5jGnZ][Just for Func]], video series by Francesc Campoy
+- [[https://changelog.com/gotime][Go Time]], podcast on Go
+- [[http://gocode.io][Operation Go]], fun game to learn Go
+
+* But wait... should I write in Go?
+- You decide!
+- Pick the right tool for the job
+- Facts over opinions - a lot of clutter on the internet
+.image img/goengineers.jpg

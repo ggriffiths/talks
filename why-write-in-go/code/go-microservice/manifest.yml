@@ -1,0 +1,7 @@
+applications:
+  - name: go-ms
+    memory: 64M
+    instances: 1
+    host: hello-go-${random-word}
+    buildpack: "https://github.com/cloudfoundry/go-buildpack.git"
+
